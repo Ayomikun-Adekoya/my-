@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>File uploader</title>
+  </head>
+<style>
+    main{
+        background-color: #238492;
+        padding-bottom: 100px;
+        padding-top: 100px;
+    }
+    .box{
+        background-color: #9DD7B1;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        text-align: center;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .button{
+        margin-top: 30px;
+        margin-left: 40%;
+        display: block;
+        width: 20%;
+        padding: 5px;
+        background-color: hsl(146, 13%, 35%);
+        text-color: hsl(236, 63%, 5%);
+        color: inherit;
+        border-radius: 5px;
+        cursor: pointer;
+        }
+
+
+    @keyframes hover {
+    100% {
+      background-color: rgb(105, 189, 157);
+    }
+    .button:hover {
+    animation-fill-mode: forwards;
+    animation-name: hover;
+    animation-duration: 1s;
+  }
+  }
+
+    a{
+        text-decoration: none;
+    }
+    .align{
+        display: flex;
+        align-items: center;
+    }
+    .file{
+        padding-top: 200px;
+        font-size: 30px;
+        font-family: cursive;
+        color: #15606b;
+    
+    }
+    #submit{
+        font-size: large;
+        
+    }
+</style>
+<html style="background-color: #238492;">
+<main class="align">
+
+
+  <body>
+    <form
+      action="http://localhost:5000/upload"
+      method="POST"
+      enctype="multipart/form-data"
+    >
+        <input type="file" name="file"/>
+        <input type="submit" />
+    </form>
+  </body>
+
+    </main>
+
+</html>

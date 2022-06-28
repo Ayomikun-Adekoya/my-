@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABS calculator</title>
+</head>
+<style>
+    main{
+        background-color: #238492;
+        padding-bottom: 100px;
+        padding-top: 20px;
+    }
+    .box{
+        background-color: #9DD7B1;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        margin: 30px;
+        width: 350px;
+        height: 350px;
+        text-align: center;
+    }
+
+    a{
+        text-decoration: none;
+    }
+    .align{
+        display: flex;
+        align-items: center;
+        padding-left: 2%;
+    }
+    html{
+        background-color: #15606b;
+    }
+    h2{
+        padding-top: 200px;
+        font-size: 30px;
+        font-family: cursive;
+        color: #15606b;
+    }
+    h1{
+        padding-top: 40px;
+        padding-bottom: 30px;
+        font-size: 50px;
+        font-family: cursive;
+        color: white;
+        text-align: center;
+        
+    }
+    h3{
+        padding-left: 2%;
+        font-size: 30px;
+        font-family: cursive;
+        color:  #9DD7B1;
+    }
+
+    .box:hover {
+    animation-fill-mode: forwards;
+    animation-name: hover;
+    animation-duration: 1s;
+  }
+
+  @keyframes hover {
+    100% {
+      background-color: rgb(50, 61, 61);
+    }
+  }
+
+
+
+</style>
+<body>
+    <div>
+        <h1>~ ABS CALCULATOR ~</h1>
+    </div>
+    <main>
+        <div>
+            <H3>Select formular</H3>
+        </div>
+        <div class="align">
+            <div >
+                <div class="box"> 
+                    <a href={{url_for('protein_value')}}><h2>ATPASE</h2></a>
+                </div>
+        
+                <div class="box">
+                    <a href={{url_for('abs_value')}} ><h2>CARBORNYL</h2></a>
+                </div>
+        
+            </div>
+        
+            <div>
+                <div class="box"> 
+                    <a href={{url_for('protein_value')}}>
+                        <h2>MDA</h2>
+                    </a>
+                </div>
+        
+                <div class="box">
+                    <a href={{url_for('protein_value')}} ><h2>H202</h2></a>
+                </div>
+        
+            </div>
+        
+            <div>
+                <div class="box"> 
+                    <a href={{url_for('abs_value')}}><h2>SULPHY</h2></a>
+                </div>
+        
+                <div class="box">
+                    <a href="" ><h2>MORE</h2></a>
+                </div>
+        
+            </div>
+        </div>    
+    </main>
+</body>
+</html>
